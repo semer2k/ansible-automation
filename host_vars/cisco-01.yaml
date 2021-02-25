@@ -1,0 +1,16 @@
+interfaces:
+  - ios_if: "Ethernet0/1"
+    desc: "LINK TO R2"
+    enabled: true
+    subint:
+      vlans:
+      - 101
+      - 201
+  - ios_if: "Ethernet0/1.101"
+    desc: "First subif link"
+    enabled: true
+    ipv4: "10.100.101.1/24"
+  - iosf_if: "Ethernet0/1.201"
+    desc: "Second subif link"
+    enabled: true
+    ipv4: "10.100.201.1/24"
